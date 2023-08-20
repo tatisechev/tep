@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color:rgb(255, 255, 255);/*blanco*/
+}
+#main{
+	width:1300px;
+	
+}
+.logo{
+	position:center;
+	/*margin-top:10px;*/
+}
+header {
+	float:left;
+	margin-top:20px;
+    width: 1300px;
+    overflow: hidden;
+    height: 95px;
+    position: relative;
+}
+nav {
+    top:-20px;
+    position: absolute;
+	margin:20px auto;
+	width:1300px;
+}
+.classDivEnc{
+	float:left;
+	margin:3px;
+}
+nav ul {
+	list-style:none;
+}
+nav > ul {
+	display:table;
+	width:100%;
+	background-color: rgb(69, 211, 247);
+	position:relative;
+}
+nav > ul li {
+	display:table-cell;
+}
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+nav > ul > li > ul {
+	display:block;
+	position:absolute;
+	background-color: rgb(248, 82, 193);
+	left:0;
+	right:0;
+	overflow:hidden;
+	height:0%;
+	font-size:14px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:15px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif; 
+	font-weight: bold;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li > ul > li a:hover {
+	background-color: rgba(153,153,153,1);
+}	
+nav > ul > li > a span {
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+nav > ul > li > a:hover > span {
+	top:0;
+}
+/*Colores*/
+nav ul li a .primero{
+	background:#0C0;
+}
+nav ul li a .segundo{
+	background:#06C;
+}
+nav ul li a .tercero{
+	background:#930;
+}
+nav ul li a .cuarto{
+	background:#F06;
+}
+nav ul li a .quinto{
+	background:#CCC;
+}
+nav ul li a .sexto{
+	background:#909;
+}
+nav ul li a .septimo{
+	background:rgb(248, 108, 14);
+}
+section{
+	float:left;
+	width:1300px;
+	height:450px;
+	/*margin:0;
+	padding:0;*/
+}
+footer{
+	float:left;
+	width:1300px;
+	height:130px;
+	background:rgba(255,102,51,1); 
+	font-family:Arial, Helvetica, sans-serif; 
+	color:#FFF;
+	line-height:25px;
+}
+.clsArticulos{ width:400px; height:400px; float:left; margin:8px; padding: 5px; }
+
+#Img1{ position: relative;}
+	
+#Img1 > div{
+	position: absolute;
+	/*width: 406px;*/
+}
+	
+#Img2{ position: relative;}
+	
+#Img2 > div{ position: absolute;}
+	
+#Img3{	position: relative;	}
+	
+#Img3 > div{ position: absolute; }
+
+.imagenes{
+	width:1100px;
+	height:400px;
+	margin:5px auto;
+	float:left;
+}
+.slides{
+	width:1100px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	background:rgba(0,102,255,1);/*Fondo de la barra de paginación*/
+	margin:0px 0px 0px 100px;
+}
+.slidesjs-pagination{
+	list-style:none;
+}
+.slidesjs-pagination li{
+	float:left;
+}
+.slidesjs-pagination li a{
+	display:block;
+	padding:10px 20px;
+	color:#FFF;/*Color de texto fijo de la numeración de la paginación*/
+	text-decoration:none;
+}
+.slidesjs-pagination li a:hover{
+	background:rgb(248, 36, 177);/*Color de la caja de numeración de la paginación*/
+}
+.slides .active{
+	background:rgb(6, 190, 247);
+	font-family:Arial, Helvetica, sans-serif;
+}
+.slidesjs-navigation{
+	background:rgb(241, 7, 191);
+	color:#FFF;
+	text-decoration:none;
+	font-weight: bolder;
+	display:inline-block;
+	padding:11.5px 20px;
+	float:right;
+
+}
+
+
+
+#sonido h2{
+	font-family:Arial, Helvetica, sans-serif;
+	padding-bottom:10px;
+}
+
+#sonido audio{
+	width:100%;
+}
+#video{
+	margin-top:5px;
+}
+
+.Textogral{
+	text-align:justify;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+}
+
+h1{
+	font-size: 30px;
+	color: #F06;
+}
+
+.imagenes-textos{
+
+	margin-left: 530px;
+}
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+	
+
+
+
